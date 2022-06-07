@@ -1,2 +1,10 @@
 server:
   port: 9999
+management:
+  endpoint:
+    gateway:
+      enabled: true # default value
+  endpoints:
+    web:
+      exposure:
+        include: "*"
