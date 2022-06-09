@@ -10,9 +10,8 @@ metadata:
     - web
     - tanzu
   annotations:
-    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=tanzu-scg-web-app'
+    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=source-to-url'
 spec:
   type: service
   lifecycle: experimental
   owner: default-team
-  system: tanzu-scg-web-app
