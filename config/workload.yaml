@@ -8,11 +8,9 @@ metadata:
     tanzu.app.live.view: true
     tanzu.app.live.view.application.flavours: scg
     tanzu.app.live.view.application.name: tanzu-scg-web-app
+  annotations:
+    autoscaling.knative.dev/minScale: "5"
 spec:
-  params:
-    - name: annotations
-      value:
-        autoscaling.knative.dev/minScale: "1"
   source:
     git:
       url: https://github.com/ksankaranara-vmw/gs-gateway
